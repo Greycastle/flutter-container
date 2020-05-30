@@ -1,17 +1,17 @@
 # flutter
 Docker container for building flutter.
 
-## dockerhub
+## dockerhub
 
 The containers are all pushed to dockerhub at [greycastle/flutter](https://hub.docker.com/r/greycastle/flutter).
 
-## build
+## build
 
 ```bash
 docker build .
 ```
 
-## tag and release
+## tag and release
 
 Build master:
 
