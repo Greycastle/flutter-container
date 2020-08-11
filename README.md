@@ -22,7 +22,7 @@ docker push greycastle/flutter:master
 
 Build hotfix/version:
 ```bash
-VERSION=v1.9.1-hotfixes
+VERSION=1.20.1
 docker build . --build-arg VERSION=${VERSION} --tag greycastle/flutter:${VERSION}
 docker push greycastle/flutter:${VERSION}
 ```
