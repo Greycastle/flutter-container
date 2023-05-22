@@ -13,16 +13,4 @@ docker build .
 
 ## tag and release
 
-Build master:
-
-```bash
-docker build . --tag greycastle/flutter:master
-docker push greycastle/flutter:master
-```
-
-Build hotfix/version:
-```bash
-VERSION=3.0.1
-docker build . --build-arg VERSION=${VERSION} --tag greycastle/flutter:${VERSION}
-docker push greycastle/flutter:${VERSION}
-```
+Run `./build_version.sh <VERSION>` for example `./build_version.sh 3.10.1`
