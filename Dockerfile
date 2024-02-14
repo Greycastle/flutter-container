@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 LABEL maintainer="david@greycastle.se"
 
@@ -11,7 +11,7 @@ WORKDIR /
 
 # Install dependencies
 RUN apt-get update &&\
- apt-get install -y lcov git-core curl unzip libglu1 lib32stdc++6 xz-utils
+ apt-get install -y lcov git-core curl unzip libglu1 xz-utils
 
 RUN curl https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${VERSION}-stable.tar.xz -o flutter.tar.gz
 RUN apt-get install xz-utils
